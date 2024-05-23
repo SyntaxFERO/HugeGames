@@ -1,0 +1,53 @@
+if game.Placeid == 8737899170 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Window
+local Window = OrionLib:MakeWindow({Name = "HugeGraceHUB [PRISON] Pet Simulator 99, HidePremium = false, IntroEnabled true, IntroText = Loading HugeGrace, SaveConfig = false, ConfigFolder = "Test"})
+
+
+-- Paragraph
+
+
+
+
+-- Tabs 
+local RankTab = Window:MakeTab({
+    Name = "AutoRank",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local DupeTab = Window:MakeTab({
+    Name = "Duping",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+-- Toggles
+RankTab:AddToggle({
+    Name = "ToggleAutoRank",
+    Default = false,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/tobi437a/Scripts/main/5a36d0b672736d368f50126a.lua'))()
+
+        print(Value)
+    end    
+})
+
+
+DupeTab:AddToggle({
+    Name = "Start Duping",
+    Default = false,
+    Callback = function(Value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/tobi437a/Scripts/main/5a36d0b672736d368f50126a.lua'))()
+
+        print(Value)
+    end    
+})
+
+
+
+
+
+OrionLib:Init()
